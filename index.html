@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP Start -Регистрация ИП и расчётные счета</title>
+  <meta name="description" content="Бесплатная регистрация ИП онлайн, подбор расчётного счёта, сопровождение бизнеса. Быстро, удобно, без визитов в налоговую.">
+  <meta name="keywords" content="регистрация ИП, открытие ООО, расчётный счёт, РКО, ЭЦП, бизнес">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SVG Silver Gradient Definitions -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <linearGradient id="silver3d" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#e8e8e8"/>
+        <stop offset="25%" stop-color="#f5f5f5"/>
+        <stop offset="50%" stop-color="#c0c0c0"/>
+        <stop offset="75%" stop-color="#d8d8d8"/>
+        <stop offset="100%" stop-color="#a0a0a0"/>
+      </linearGradient>
+      <linearGradient id="silver3d-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#d0d0d0"/>
+        <stop offset="30%" stop-color="#f0f0f0"/>
+        <stop offset="60%" stop-color="#b0b0b0"/>
+        <stop offset="100%" stop-color="#909090"/>
+      </linearGradient>
+      <filter id="silver-glow">
+        <feGaussianBlur stdDeviation="2" result="blur"/>
+        <feFlood flood-color="#c0c0c0" flood-opacity="0.3"/>
+        <feComposite in2="blur" operator="in"/>
+        <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+  </svg>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__svg" width="32" height="32" viewBox="0 0 48 48" fill="none">
+          <rect x="4" y="6" width="30" height="38" rx="4" fill="url(#silver3d)" opacity=".9"/>
+          <rect x="14" y="4" width="30" height="38" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+          <line x1="20" y1="14" x2="38" y2="14" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="21" x2="34" y2="21" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+          <line x1="20" y1="28" x2="36" y2="28" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 35l3 3 6-6" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo__text">IP Start</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services" class="nav__link">Услуги</a>
+        <a href="#pricing" class="nav__link">Тарифы</a>
+        <a href="#advantages" class="nav__link">Преимущества</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm">Консультация</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- HERO BG: положи картинку hero-bg.jpg в папку проекта -->
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Готовые решения для фрилансеров и онлайн-предпринимателей</h1>
+        <p class="hero__subtitle">Бесплатная регистрация ИП без визитов, НПД без отчётности, лучшие банковские условия и бизнес-сервисы!</p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--lg">Выбрать тариф</a>
+          <a href="#contact" class="btn btn--outline btn--lg">Получить консультацию</a>
+        </div>
+      </div>
+      <div class="hero__cards">
+        <div class="hero-card">
+          <div class="hero-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <path d="M24 4l4 8h10l-8 6 3 10-9-6-9 6 3-10-8-6h10z" fill="url(#silver3d)" stroke="url(#silver3d-dark)" stroke-width="1"/>
+              <path d="M14 36c0-4 4-6 10-6s10 2 10 6v4H14z" fill="url(#silver3d-dark)" opacity=".6"/>
+              <circle cx="30" cy="38" r="6" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M28 38l2 2 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Бесплатная регистрация ИП</h3>
+          <p>Без визитов в налоговую и банк. Оформление онлайн за несколько минут!</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="6" y="10" width="36" height="28" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <rect x="10" y="16" width="28" height="3" rx="1.5" fill="#555"/>
+              <rect x="10" y="22" width="18" height="2" rx="1" fill="#777" opacity=".6"/>
+              <rect x="10" y="27" width="22" height="2" rx="1" fill="#777" opacity=".6"/>
+              <rect x="10" y="32" width="14" height="2" rx="1" fill="#777" opacity=".6"/>
+              <circle cx="36" cy="32" r="6" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M34 32h4M36 30v4" stroke="#555" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Работайте без отчётности</h3>
+          <p>Режим НПД -ведите бизнес легко, без лишних хлопот и бухгалтера.</p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card__icon">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="4" y="14" width="40" height="24" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <rect x="4" y="14" width="40" height="8" fill="url(#silver3d)" rx="4"/>
+              <rect x="8" y="16" width="8" height="4" rx="1" fill="#555" opacity=".5"/>
+              <circle cx="24" cy="32" r="4" fill="url(#silver3d)" stroke="#999" stroke-width="1"/>
+              <path d="M22.5 32l1.5 1.5 3-3" stroke="#555" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 10h32M12 6h24" stroke="url(#silver3d)" stroke-width="2" stroke-linecap="round" opacity=".4"/>
+            </svg>
+          </div>
+          <h3>Лучшие банковские условия</h3>
+          <p>Выгодные тарифы, промо-периоды и защита от ошибок новичков!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <p class="section-desc">Комплексные решения для старта и ведения вашего бизнеса</p>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="8" y="4" width="32" height="40" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <line x1="14" y1="14" x2="34" y2="14" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+              <line x1="14" y1="20" x2="30" y2="20" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="26" x2="32" y2="26" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="14" y1="32" x2="26" y2="32" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="36" cy="36" r="8" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M33 36l3 3 5-5" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Регистрация ИП / ООО</h3>
+          <p class="service-card__text">Полное сопровождение: заполним заявку, подготовим и доставим документы. Оформление занимает всего 15 минут.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="6" y="12" width="36" height="26" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <path d="M6 18h36" stroke="#999" stroke-width="1"/>
+              <rect x="10" y="22" width="10" height="6" rx="1" fill="url(#silver3d)" opacity=".8"/>
+              <circle cx="34" cy="30" r="4" fill="url(#silver3d)" stroke="#999" stroke-width="1"/>
+              <circle cx="38" cy="30" r="4" fill="url(#silver3d-dark)" stroke="#999" stroke-width="1" opacity=".7"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Открытие расчётного счёта</h3>
+          <p class="service-card__text">Быстрое и лояльное открытие в удобном вам месте. Эквайринг, оплата по QR, онлайн-кассы.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <!-- Корпус флешки (горизонтальный) -->
+              <rect x="2" y="14" width="30" height="20" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <!-- USB-A коннектор (выступает справа) -->
+              <rect x="32" y="18" width="14" height="12" rx="1.5" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <!-- LED-индикатор -->
+              <circle cx="9" cy="24" r="2.5" fill="#4ae" opacity=".6"/>
+              <!-- Петля для шнурка -->
+              <circle cx="25" cy="24" r="3.5" fill="none" stroke="#777" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Получение ЭЦП (УКЭП)</h3>
+          <p class="service-card__text">Токен и выдача ЭЦП бесплатно. Электронная подпись для работы с госорганами и контрагентами.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="6" y="8" width="28" height="32" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <line x1="12" y1="16" x2="28" y2="16" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="22" x2="24" y2="22" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="28" x2="26" y2="28" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M30 24l8-8 6 6-8 8H30v-6z" fill="url(#silver3d)" stroke="#888" stroke-width="1" stroke-linejoin="round"/>
+              <path d="M36 18l6 6" stroke="#999" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Изменения в ЕГРИП / ЕГРЮЛ</h3>
+          <p class="service-card__text">Любые изменения: от ОКВЭД до состава учредителей. Смена руководителя, купля-продажа ООО.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="4" y="10" width="18" height="24" rx="2" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <rect x="26" y="10" width="18" height="24" rx="2" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M22 20h4M22 26h4" stroke="#999" stroke-width="2" stroke-linecap="round"/>
+              <line x1="9" y1="16" x2="17" y2="16" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="9" y1="20" x2="15" y2="20" stroke="#777" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="31" y1="16" x2="39" y2="16" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="31" y1="20" x2="37" y2="20" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14 38v4M34 38v4" stroke="url(#silver3d)" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Электронный документооборот</h3>
+          <p class="service-card__text">Подключение к ЭДО и сервисам сдачи отчётности. Упростите взаимодействие с контрагентами.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="10" y="18" width="28" height="24" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <circle cx="24" cy="30" r="5" fill="url(#silver3d)" stroke="#999" stroke-width="1"/>
+              <path d="M22 30l2 2 4-4" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 18V12a8 8 0 0116 0v6" stroke="url(#silver3d)" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Выездная регистрация</h3>
+          <p class="service-card__text">Реквизиты счёта и корпоративная карта сразу. Готовность -4 рабочих дня, включая день встречи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Тарифы</h2>
+      <p class="section-desc">Выберите удобное и выгодное решение для старта!</p>
+      <div class="pricing__grid">
+        <!-- Базовый -->
+        <div class="price-card">
+          <div class="price-card__header">
+            <h3 class="price-card__name">Базовый</h3>
+            <div class="price-card__price">2 000 <span>руб.</span></div>
+          </div>
+          <ul class="price-card__features">
+            <li>Предварительная консультация</li>
+            <li>Сопровождение регистрации ИП/ООО через банк</li>
+            <li>Подбор тарифа РКО</li>
+            <li>Получение ЭЦП ФНС на рутокене</li>
+            <li>2 000 руб. на р/с от банка-партнёра</li>
+          </ul>
+          <a href="#contact" class="btn btn--block">Заказать</a>
+        </div>
+        <!-- Оптимальный -->
+        <div class="price-card price-card--popular">
+          <div class="price-card__badge">Популярный</div>
+          <div class="price-card__header">
+            <h3 class="price-card__name">Оптимальный</h3>
+            <div class="price-card__price">3 000 <span>руб.</span></div>
+          </div>
+          <ul class="price-card__features">
+            <li>Всё из тарифа «Базовый»</li>
+            <li>3 000 руб. от банка-партнёра</li>
+            <li>Подключение к ЭДО</li>
+            <li>2 недели пробного доступа к сервису отчётности</li>
+            <li>Чек-лист по работе с самозанятыми</li>
+          </ul>
+          <a href="#contact" class="btn btn--block btn--primary">Заказать</a>
+        </div>
+        <!-- Премиум -->
+        <div class="price-card">
+          <div class="price-card__header">
+            <h3 class="price-card__name">Премиум</h3>
+            <div class="price-card__price">4 500 <span>руб.</span></div>
+          </div>
+          <ul class="price-card__features">
+            <li>Всё из тарифа «Оптимальный»</li>
+            <li>2 часа дополнительных консультаций</li>
+            <li>Подключение сервисов под ваш бизнес</li>
+            <li>Персональное сопровождение</li>
+            <li>Приоритетная поддержка</li>
+          </ul>
+          <a href="#contact" class="btn btn--block">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Как это работает</h2>
+      <p class="section-desc">При регистрации ИП/ООО через сервис IP Start</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Консультация</h3>
+          <p class="step__text">Разберём все нюансы регистрации и подберём оптимальную форму для вашего бизнеса</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Оформление</h3>
+          <p class="step__text">Заполним заявку, подготовим и доставим все необходимые документы. Займёт 15 минут</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Регистрация</h3>
+          <p class="step__text">Через 5 дней -электронные документы о регистрации, готовый мобильный банк и р/с</p>
+        </div>
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Старт бизнеса</h3>
+          <p class="step__text">Эквайринг, QR-оплата, карта, промокоды и бонусы для комфортного старта</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advantages -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="advantages__grid">
+        <div class="advantage-card">
+          <div class="advantage-card__icon">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <polygon points="24,4 28,18 42,18 30,26 34,40 24,32 14,40 18,26 6,18 20,18" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3 class="advantage-card__title">Уникальность</h3>
+          <p class="advantage-card__text">Удобный сервис для быстрой регистрации ИП/ООО и управления бизнесом. Финансовый контроль, управление персоналом и полезные инструменты -всё на одной платформе.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <rect x="4" y="4" width="18" height="18" rx="3" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <rect x="26" y="4" width="18" height="18" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <rect x="4" y="26" width="18" height="18" rx="3" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <rect x="26" y="26" width="18" height="18" rx="3" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+            </svg>
+          </div>
+          <h3 class="advantage-card__title">Комплексный подход</h3>
+          <p class="advantage-card__text">Правильная «упаковка» бизнеса для успешного старта: регистрация, выбор формы, лицензии и консультации по ведению бизнеса.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <circle cx="24" cy="16" r="8" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M10 40c0-8 6-14 14-14s14 6 14 14" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <circle cx="36" cy="36" r="7" fill="url(#silver3d)" stroke="#888" stroke-width="1"/>
+              <path d="M33 36l3 3 5-5" stroke="#555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="advantage-card__title">Персонализация</h3>
+          <p class="advantage-card__text">Работаем с ведущими банками и экспертами, чтобы предложить индивидуальные условия и подключить только нужные решения.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-card__icon">
+            <svg width="40" height="40" viewBox="0 0 48 48" fill="none" filter="url(#silver-glow)">
+              <path d="M12 22l8 8 16-16" stroke="url(#silver3d)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <path d="M12 22l8 8 16-16" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity=".3"/>
+            </svg>
+          </div>
+          <h3 class="advantage-card__title">Надёжность</h3>
+          <p class="advantage-card__text">Серьёзное отношение к конфиденциальности данных и качеству услуг. Работаем по договору, поддерживаем все формы оплаты.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="section-title">Часто задаваемые вопросы</h2>
+      <p class="section-desc">Если вопросы останутся -мы всегда готовы ответить на них</p>
+      <div class="faq__list">
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>РКО, р/с, счёт для бизнеса -зачем это предпринимателю?</span>
+            <svg class="faq-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Расчётно-кассовое обслуживание (РКО) -это комплекс банковских услуг для ведения расчётов и управления финансами бизнеса. Включает открытие и ведение счетов ИП и ООО, платежи, переводы, снятие наличных, валютные операции и другие услуги.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Почему вы регистрируете бизнес через банк?</span>
+            <svg class="faq-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Быстро и удобно. Регистрация ИП теперь возможна онлайн -без визитов в налоговую или МФЦ. Достаточно подать заявку на сайте банка или доверить процесс нам -мы оформим всё за вас.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Почему ваши цены ниже, чем у юристов-регистраторов?</span>
+            <svg class="faq-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Мы строим бизнес-модель на партнёрском маркетинге, что позволяет сохранять доступные цены на услуги. Благодаря системе вознаграждений от партнёров мы избегаем лишних наценок.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Сколько времени занимает регистрация?</span>
+            <svg class="faq-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Оформление документов занимает всего 15 минут. Через 5 рабочих дней вы получите электронные документы о регистрации ИП/ООО, готовый мобильный банк, расчётный счёт и корпоративную карту.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">
+            <span>Можно ли открыть ИП без визита в налоговую?</span>
+            <svg class="faq-item__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </summary>
+          <div class="faq-item__answer">
+            <p>Да! Мы оформляем регистрацию полностью онлайн через банки-партнёры. Вам не нужно посещать налоговую, МФЦ или банк -всё делается дистанционно.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <h2 class="section-title section-title--left">Свяжитесь с нами</h2>
+          <p class="contact__text">Оставьте заявку, и мы перезвоним вам в ближайшее время для бесплатной консультации.</p>
+          <div class="contact__details">
+            <div class="contact__detail">
+              <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M14 8l6 12-6 6 12 12 6-6 12 6-4 6c-16 0-36-20-36-36z" fill="url(#silver3d)" stroke="#888" stroke-width="1"/></svg>
+              <span>Позвоним вам в удобное время</span>
+            </div>
+            <div class="contact__detail">
+              <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" fill="none" stroke="url(#silver3d)" stroke-width="2"/><path d="M24 12v14l8 6" stroke="url(#silver3d-dark)" stroke-width="2" stroke-linecap="round"/></svg>
+              <span>Ответ в течение 30 минут</span>
+            </div>
+            <div class="contact__detail">
+              <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><rect x="4" y="10" width="40" height="28" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/><path d="M4 16l20 12 20-12" stroke="url(#silver3d)" stroke-width="2"/></svg>
+              <span>Бесплатная консультация</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Интересующая услуга</label>
+            <select id="service" name="service">
+              <option value="">Выберите услугу</option>
+              <option value="ip">Регистрация ИП</option>
+              <option value="ooo">Регистрация ООО</option>
+              <option value="rko">Открытие расчётного счёта</option>
+              <option value="ecp">Получение ЭЦП</option>
+              <option value="changes">Изменения в ЕГРИП/ЕГРЮЛ</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col">
+          <a href="#" class="logo logo--footer">
+            <svg class="logo__svg" width="28" height="28" viewBox="0 0 48 48" fill="none">
+              <rect x="4" y="6" width="30" height="38" rx="4" fill="url(#silver3d)" opacity=".9"/>
+              <rect x="14" y="4" width="30" height="38" rx="4" fill="url(#silver3d-dark)" stroke="#888" stroke-width="1"/>
+              <line x1="20" y1="14" x2="38" y2="14" stroke="#555" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="21" x2="34" y2="21" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="28" x2="36" y2="28" stroke="#666" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 35l3 3 6-6" stroke="#555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="logo__text">IP Start</span>
+          </a>
+          <p class="footer__about">Комплексные услуги по регистрации бизнеса и подбору банковских решений.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Навигация</h4>
+          <a href="#services" class="footer__link">Услуги</a>
+          <a href="#pricing" class="footer__link">Тарифы</a>
+          <a href="#advantages" class="footer__link">Преимущества</a>
+          <a href="#faq" class="footer__link">FAQ</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Услуги</h4>
+          <a href="#services" class="footer__link">Регистрация ИП</a>
+          <a href="#services" class="footer__link">Регистрация ООО</a>
+          <a href="#services" class="footer__link">Расчётный счёт</a>
+          <a href="#services" class="footer__link">ЭЦП и ЭДО</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Контакты</h4>
+          <p class="footer__contact">ИП Сарсыкеев Арман Сарсенович</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 IP Start. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
